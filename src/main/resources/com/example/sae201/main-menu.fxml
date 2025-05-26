@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.sae201.MainMenuController" prefWidth="1366" prefHeight="768" style="-fx-background-color: #F5F1E6;">
+    <left>
+        <VBox alignment="CENTER" spacing="32" prefWidth="50.0" style="-fx-background-color: #374151;" BorderPane.alignment="CENTER">
+            <padding>
+                <Insets top="0" right="0" bottom="0" left="0"/>
+            </padding>
+            <Label text="TIMELINE" style="-fx-font-family: 'JetBrains Mono'; -fx-font-size: 64px; -fx-text-fill: #F5F1E6; -fx-font-weight: bold;" />
+            <VBox spacing="20" alignment="CENTER">
+                <Button text="Nouvelle partie" style="-fx-font-family: 'JetBrains Mono'; -fx-font-size: 16px; -fx-background-color: #C6A47E; -fx-text-fill: #374151; -fx-background-radius: 8; -fx-pref-width: 240; -fx-pref-height: 48;" onAction="#onNouvellePartie" />
+                <Button text="Reprendre la\npartie" style="-fx-font-family: 'JetBrains Mono'; -fx-font-size: 16px; -fx-background-color: #F5F1E6; -fx-text-fill: #374151; -fx-background-radius: 8; -fx-pref-width: 240; -fx-pref-height: 48;" onAction="#onReprendrePartie" />
+                <Button text="Gérer les decks" style="-fx-font-family: 'JetBrains Mono'; -fx-font-size: 16px; -fx-background-color: #F5F1E6; -fx-text-fill: #374151; -fx-background-radius: 8; -fx-pref-width: 240; -fx-pref-height: 48;" onAction="#onGererDecks" />
+                <Button text="Paramètres" style="-fx-font-family: 'JetBrains Mono'; -fx-font-size: 16px; -fx-background-color: #F5F1E6; -fx-text-fill: #374151; -fx-background-radius: 8; -fx-pref-width: 240; -fx-pref-height: 48;" onAction="#onParametres" />
+                <Button text="Fermer" style="-fx-font-family: 'JetBrains Mono'; -fx-font-size: 16px; -fx-background-color: #4B5A6A; -fx-text-fill: #F5F1E6; -fx-background-radius: 8; -fx-pref-width: 240; -fx-pref-height: 48;" onAction="#onFermer" />
+            </VBox>
+        </VBox>
+    </left>
+    <center>
+        <StackPane alignment="CENTER">
+            <HBox alignment="CENTER" spacing="-60">
+                <ImageView fitWidth="180" fitHeight="260">
+                    <image>
+                        <Image url="/Java_Card.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitWidth="180" fitHeight="260">
+                    <image>
+                        <Image url="/Java_Card.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitWidth="180" fitHeight="260">
+                    <image>
+                        <Image url="/Java_Card.png" />
+                    </image>
+                </ImageView>
+            </HBox>
+        </StackPane>
+    </center>
+</BorderPane> 
