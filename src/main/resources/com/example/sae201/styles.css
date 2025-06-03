@@ -1,0 +1,88 @@
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url("../../../fonts/ttf/JetBrainsMono-Bold.ttf");
+}
+
+.split-pane {
+    -fx-background-color: #2C3E50;
+}
+
+.split-pane .split-pane-divider {
+    -fx-padding: 0;
+    -fx-border-color: transparent;
+}
+
+.root {
+    -fx-background-color: #2C3E50;
+}
+
+/* Default text color for most labels on the dark background */
+.label {
+    -fx-text-fill: white;
+    -fx-font-family: "JetBrains Mono";
+}
+
+/* Style for the "TIMELINE" title */
+.vbox > .label:first-child {
+    -fx-font-size: 36px;
+    -fx-font-family: "JetBrains Mono";
+    /* You might need to adjust letter spacing depending on the font */
+    /* -fx-letter-spacing: 2px; */
+}
+
+.button {
+    -fx-background-color: #F5F5DC; /* Light beige background for most buttons */
+    -fx-text-fill: #2C3E50; /* Dark text */
+    -fx-background-radius: 5; /* Rounded corners */
+    -fx-border-radius: 5;
+    -fx-font-weight: bold;
+    -fx-pref-width: 200px; /* Consistent width */
+    -fx-padding: 10px 20px; /* Adjust padding for button size */
+    -fx-font-family: "JetBrains Mono";
+    -fx-cursor: hand; /* Indicate clickable */
+}
+
+.button:hover {
+    -fx-opacity: 0.9;
+}
+
+/* Style for the "Nouvelle partie" button (orange-brown) using fx:id */
+#newGameButton {
+     -fx-background-color: #E6A157;
+     -fx-text-fill: white;
+}
+
+/* Style for the "Fermer" button (darker blue-gray) using fx:id */
+#closeButton {
+    -fx-background-color: #607D8B; /* Darker blue-gray */
+    -fx-text-fill: white;
+    /* The original has a subtle border or shadow, you might need to add this */
+    /* -fx-border-color: derive(#607D8B, -20%); */
+    /* -fx-border-width: 1px; */
+    /* -fx-border-radius: 5; */
+}
+
+/* Remove the now redundant style class rules */
+/*
+.button-nouvelle-partie {
+     -fx-background-color: #E6A157 !important;
+     -fx-text-fill: white;
+}
+
+.button-fermer {
+    -fx-background-color: #607D8B !important;
+    -fx-text-fill: white;
+}
+*/
+
+/* Style for the right pane VBox (light beige background) */
+#rightPane {
+    -fx-background-color: #F5F5DC;
+    -fx-alignment: center; /* Center the HBox of cards */
+}
+
+/* Style for the HBox containing cards */
+#cardContainer {
+    -fx-alignment: center; /* Center cards horizontally */
+    -fx-spacing: 20px; /* Space between cards */
+}
